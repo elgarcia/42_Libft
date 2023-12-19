@@ -6,7 +6,7 @@
 #    By: elias <elias@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/08 19:16:50 by eliagarc          #+#    #+#              #
-#    Updated: 2023/12/14 03:49:57 by elias            ###   ########.fr        #
+#    Updated: 2023/12/19 20:07:32 by elias            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 
-%.o: %.c Makefile $(INCLUDE) 
+%.o: %.c Makefile $(INCLUDES) 
 	@echo "Compiling $<..."
 	@${CC} -c ${CFLAGS} -I ${INCLUDES} $< -o $@
 
